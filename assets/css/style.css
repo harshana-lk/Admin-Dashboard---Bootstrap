@@ -27,7 +27,7 @@ body {
   display: grid;
   width: 96%;
   margin: 0 auto;
-  grid-template-columns: 14rem auto 23rem;
+  grid-template-columns: 14rem auto;
   gap: 1.8rem;
 }
 
@@ -42,7 +42,7 @@ img {
 
 h1 {
   font-weight: 800;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 
 h2,
@@ -61,6 +61,14 @@ h4 {
 
 h5 {
   font-size: 0.77rem;
+}
+
+.warning {
+  color: gold;
+}
+
+.primary {
+  color: cornflowerblue;
 }
 
 .span-logo {
@@ -126,6 +134,7 @@ aside .sidebar a:last-child {
 aside .sidebar a.active {
   background: black;
   margin-left: 0;
+  color: #00ffa3;
 }
 
 aside .sidebar a.active::before {
@@ -151,7 +160,7 @@ aside .sidebar a:hover span {
 /* Section Main========================================================================================================= */
 
 main {
-  margin-top: 1.4rem;
+  margin-top: 1.5rem;
 }
 
 main h1 {
@@ -194,7 +203,8 @@ main .insights div span {
 main .insights div.middle {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 0;
 }
 
 main .insights h3 {
@@ -258,4 +268,55 @@ main .insights .progress .number {
 
 small {
   font-weight: 600;
+  margin-left: 30px;
+}
+
+/* ===============================================================RECENT ORDERS=============================================================================== */
+
+main .recent-orders {
+  margin-top: 2rem;
+}
+
+main #orders-head {
+  font-size: 1.4rem;
+}
+
+main .recent-orders h2 {
+  margin-bottom: 0.8rem;
+}
+
+main .recent-orders table {
+  background-color: black;
+  width: 100%;
+  border-radius: 35px;
+  text-align: center;
+  padding: 10px 10px;
+  border: 1px solid #00ffa3;
+  box-shadow: 0px 10px 15px #00ffa3;
+  transition: all 300ms ease;
+}
+
+main .recent-orders table:hover {
+  box-shadow: none;
+}
+
+main .recent-orders table thead tr {
+  color: white;
+}
+
+main table tbody td {
+  height: 2.8rem;
+  /* border-bottom: 0.5px solid gray; */
+  color: darkgray;
+}
+
+main table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+#show {
+  color: white;
+  text-align: center;
+  display: block;
+  margin-top: 2rem;
 }
